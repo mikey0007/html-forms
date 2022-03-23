@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        svg path,text,stroking
+    </title>
+</head>
+<body>
+    <svg height="210" width="500">
+        <path d="M 170 10 L 100 200 L 250 200 L20 180 Z" style="fill: aqua;stroke:chartreuse;"></path>
+
+    </svg>
+    <svg height="210" width="500">
+        <path d="M150 20 L70 200 L220 200 L110 20 Z"></path>
+
+    </svg>
+    <svg height="210" width="500">
+        <path d="M100 0 S 150 200 300 0 Z" style="fill: none;stroke:chartreuse; stroke: width 9;"></path>
+
+    </svg>
+    <svg height="100" width="200">
+        <text x="10" y="15" style="fill: red;stroke:chartreuse;" transform="rotate(30 20 40)">I HATE SVG.</text>
+    </svg>
+    <svg height="100" width="200">
+        <g fill="none">
+            <path stroke="red" d="M5 20 L215 0" />
+                <path stroke="black" d="M5 40 L215 0" />
+                    <path stroke="blue" d="M5 60 L215 0" />
+                
+            
+        </g>
+
+    </svg>
+    <svg height="100" width="200">
+        <g fill="none" stroke="black" stroke-width="6">
+          <!---  <path stroke-width="2" d="M5 20 L200 20" />
+                <path stroke-width="5" d="M5 40 L200 40" />
+                    <path stroke-width="7" d="M5 60 L200 60" />-->
+                
+                    <path stroke-linecap="butt" d="M5 20 L200 20" />
+                    <path stroke-linecap="round" d="M5 40 L200 40" />
+                        <path stroke-linecap="square" d="M5 60 L200 60" /> 
+        </g>
+
+    </svg>
+    <svg height="100" width="200">
+        <g fill="none" stroke="black" stroke-width="6">
+                
+                    <path stroke-dasharray="5,5" d="M5 20 L200 20" />
+                    <path stroke-dasharray="10,10" d="M5 40 L200 40" />
+                        <path stroke-dasharray="20,10,5,5,5,10" d="M5 60 L200 60" /> 
+        </g>
+
+    </svg>
+</body>

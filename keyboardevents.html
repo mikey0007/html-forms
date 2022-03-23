@@ -5,13 +5,14 @@
     </title>
     <script type="text/javascript">
 
-       function keyDown(){
+       function keyDown()
+       {
            document.body.style.background = "yellow";
                }
         
-               functionPress()
+               function keyPress()
                {
-                   document.body.style ="green";
+                   document.body.style.background ="green";
                }
 
        function keyup()
@@ -26,7 +27,11 @@
         <form action="" method="" >
             <fieldset>
                 <label>firstname</label>
-                <input type="text" name="firstname" onkeydown="keyDown()">
+                <input type="text" name="firstname" onkeydown="keyDown()"><br><br>
+                <label>lastname</label>
+                <input type="text" name="lastname" onkeypress="keyPress()"><br><br>
+                <label>contact number</label>
+                <input type="text" name="contactnum" onkeyup="keyup()"><br><br>
             </fieldset>
     </form>
 </body>

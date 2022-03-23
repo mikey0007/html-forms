@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        mouse events
+    </title>
+    <script type="text/javascript">
+        function myfunction(){
+            alert("Button is clicked");
+        }
+        function MouseOverFunction(){
+            document.body.style.background="cyan";
+        }
+        function MouserOutFunction(){
+            document.body.style.background="white";
+        }
+        function mousemovefunction(){
+            document.body.style.background = "green ";
+        }
+        function mouserupfunction(){
+            document.body.style.background = "orange";
+        }
+    </script>
+</head>
+<body>
+    <form action="" method="" >
+        <fieldset>
+            <label onmousedown="myfunction()">firstname</label>
+            <input type="text" name="firstname" ><br><br>
+            <label onmouseover="MouseOverFunction()" onmouseout="MouserOutFunction()">lastname</label>
+            <input type="text" name="lastname" ><br><br>
+            <label onmousemove="mousemovefunction()">contact number</label>
+            <input type="text" name="contactnum" ><br><br>
+           <!-- <input type="button" value="clickme!!" onclick="click()" >-->
+           <button ondblclick="myfunction()">click me!</button>
+           <button onmouseup="mouserupfunction()">clickmeplz</button>
+
+        </fieldset>
+</form>
+</body>

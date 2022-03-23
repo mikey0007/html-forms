@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        events
+    </title>
+    <script type="text/javascript">
+        function changeBackground(){
+            document.body.style.background="yellow";
+        }
+            function changeBorder()
+            {
+                document.body.style.border="10px solid"
+            }
+       
+
+        function changeBackgroundOnSubmit(){
+            alert();
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <form action=""  method="" onreset="changeBackground" onsubmit="changeBackgroundOnSubmit();">
+
+
+            <label>First Name:</label>
+           <input type="text" name="firstname" onblur=""><br><br>
+           
+           
+            <label>Last Name:</label>
+           <!-- <input type="text" name="lasttname" onchange="changeBackground()"><br><br>--> 
+           <input type="text" name="lasttname"><br><br>
+
+
+            <label>email:</label>
+            <input type="email" name="email" oninvalid="changeBorder()"><br><br>
+          
+            <label>UserName:</label>
+            <input type="text" name="username" oninput="changeBorder()"><br><br>
+
+            <input type="submit" value="submit"><br><br>
+            
+            <input type="reset" name="reset" >
+
+        </fieldset>
+    </form>
+</body>

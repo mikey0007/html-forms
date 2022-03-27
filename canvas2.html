@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        CANVAS EXAMPLE
+    </title>
+</head>
+<body>
+    <canvas id="canvas" width="300" height="200" style="border: 2px solid green;">
+        Your browser does not support the HTML canvas tag.
+    </canvas>
+    <script>
+       var can=document.getElementById("canvas");
+       var ctx= can.getContext("2d");
+       ctx.moveTo(0,0);
+       ctx.lineTo(300,200);
+       ctx.stroke();
+    </script>
+
+    <canvas id="canvas1" width="200" height="100" style="border:2px green;">
+        Your browser does not support the HTML canvas tag.
+    </canvas>
+    <script>
+        var canv=document.getElementById("canvas1");
+        var ctx = canv.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(95,50,40,0,2*Math.PI);
+        ctx.stroke();
+    </script>
+</body>
+</html>
+
+
